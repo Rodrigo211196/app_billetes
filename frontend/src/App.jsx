@@ -21,8 +21,8 @@ function App() {
 
   const handleDenominationSelect = (value) => {
     setDenomination(value);
-    addMessage('user', `Corte Bs${value}`);
-    addMessage('bot', `Ingresa el número de serie para Bs${value}.`);
+    addMessage('user', `Corte ${value}Bs`);
+    addMessage('bot', `Ingresa el número de serie para ${value}Bs.`);
     setStep('enter_serial');
   };
 
