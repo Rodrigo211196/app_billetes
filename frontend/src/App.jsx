@@ -67,7 +67,7 @@ function App() {
   return (
     <div className="chat-container">
       <header className="chat-header">
-        <h1>NÚMEROS DE SERIE - Chatbot-Verificador de Series Reportadas</h1>
+        <h1>Chatbot-Verificador de Series Reportadas</h1>
         <p>solo serie B-Datos obtenidos del boletín del Banco Central el 28-02-2026</p>
         <p>Esta herramienta es de carácter informativo. La validación definitiva de la autenticidad de un billete corresponde a las entidades bancarias autorizadas".</p>
       </header>
