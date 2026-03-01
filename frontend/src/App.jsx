@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-const API_URL = 'http://localhost:3001/api/check';
+const API_URL = import.meta.env.PROD ? '/api/check' : 'http://localhost:3001/api/check';
 
 function App() {
   const [messages, setMessages] = useState([
@@ -67,8 +67,9 @@ function App() {
   return (
     <div className="chat-container">
       <header className="chat-header">
-        <h1>NÚMEROS DE SERIE - Chatbot</h1>
-        <p>solo serie B</p>
+        <h1>NÚMEROS DE SERIE - Chatbot-Verificador de Series Reportadas</h1>
+        <p>solo serie B-Datos obtenidos del boletín del Banco Central el 28-02-2026</p>
+        <p>Esta herramienta es de carácter informativo. La validación definitiva de la autenticidad de un billete corresponde a las entidades bancarias autorizadas".</p>
       </header>
 
       <main className="chat-messages">
@@ -110,6 +111,8 @@ function App() {
           </button>
         </div>
       )}
+
+      <footer className="chat-footer"> Derechos de autor 2026, Rodrigo R.Todos los derechos reservados..</footer>
     </div>
   );
 }

@@ -177,6 +177,14 @@ input:focus {
   background: var(--primary-hover);
 }
 
+.chat-footer {
+  border-top: 1px solid var(--glass-border);
+  padding: 10px 14px;
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
