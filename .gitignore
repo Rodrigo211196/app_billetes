@@ -1,0 +1,21 @@
+# Node
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Env
+.env
+.env.*
+
+# Build
+frontend/dist/
+
+# Runtime data
+backend/database.sqlite
+
+# OS/IDE
+.DS_Store
+Thumbs.db
+.vscode/
